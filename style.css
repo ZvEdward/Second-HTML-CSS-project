@@ -13,14 +13,53 @@ body {
     /* letter-spacing: 0.5cm; */
 }
 
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+}
+
+.list-item{
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.book-ani:hover ~ .list-item{
+    /* transition: all 0.5s; */
+    opacity: 1;
+}
+
+.book-ani{
+    transition: all 0.5s;
+    width: 120px;
+    height: 120px;
+}
+
+
+/* .book-ani:hover ~ span{
+    visibility: visible;
+} */
+
+
+
 .category-heading{
+    text-align: center;
     font-size: 250%;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     text-decoration: underline;
 }
 
 .library-display{
+    display: flex;
     text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex: 0;
+    flex-shrink: inherit;
 }
 
 .book-display {
@@ -60,3 +99,56 @@ body {
     width: 240px;
     height: 365px;
 }
+
+
+/* -------------------Borrowed css for button---------------------------- */
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #040f16;
+    color: #f5f5f5;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+  }
+  
+  .btn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .btn .text {
+    transform: translateX(55px);
+  }
+  
+  .btn:hover .icon {
+    width: 175px;
+  }
+  
+  .btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active .icon {
+    transform: scale(0.85);
+  }
