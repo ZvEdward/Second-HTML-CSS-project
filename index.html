@@ -21,7 +21,19 @@
         <lottie-player class="book-ani" src="https://lottie.host/440a7192-a9c5-48c2-99dc-7f79d7cf1b1f/iJ2fXr8vhN.json"
         background="transparent" speed="1" loop autoplay></lottie-player>
         <span class="list-item">
-            <button class="btn">
+            <span class="list-item">
+                <a href="#top" class="btn">
+                    <span class="icon">
+                        <svg viewBox="0 0 175 80" width="40" height="40">
+                            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        </svg>
+                    </span>
+                    <span class="text">Top</span>
+                </a>
+            </span>
+            <a href="#history" class="btn">
                 <span class="icon">
                     <svg viewBox="0 0 175 80" width="40" height="40">
                         <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -29,11 +41,11 @@
                         <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
                     </svg>
                 </span>
-                <span class="text">MENU</span>
-            </button>
+                <span class="text">History</span>
+            </a>
         </span>
         <span class="list-item">
-            <button class="btn">
+            <a href="#business" class="btn">
                 <span class="icon">
                     <svg viewBox="0 0 175 80" width="40" height="40">
                         <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -42,10 +54,10 @@
                     </svg>
                 </span>
                 <span class="text">Business</span>
-            </button>
+            </a>
         </span>
         <span class="list-item">
-            <button class="btn">
+            <a href="#travel" class="btn">
                 <span class="icon">
                     <svg viewBox="0 0 175 80" width="40" height="40">
                         <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -54,10 +66,10 @@
                     </svg>
                 </span>
                 <span class="text">Travel</span>
-            </button>
+            </a>
         </span>
         <span class="list-item">
-            <button class="btn">
+            <a href="#romance" class="btn">
                 <span class="icon">
                     <svg viewBox="0 0 175 80" width="40" height="40">
                         <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -66,13 +78,25 @@
                     </svg>
                 </span>
                 <span class="text">Romance</span>
-            </button>
+            </a>
+        </span>
+        <span class="list-item">
+            <a href="#fantasy" class="btn">
+                <span class="icon">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    </svg>
+                </span>
+                <span class="text">Fantasy</span>
+            </a>
         </span>
     </div>
 
 
-    <h2 class="category-heading">History</h2>
-    <div class="library-display history">
+    <h2 class="category-heading" id="history">History</h2>
+    <div class="library-display">
         <span class="book-display">
             <a class="book-icon"
                 href="https://www.amazon.com/King-Life-Jonathan-Eig/dp/0374279292/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1691263076&sr=1-5"
@@ -105,8 +129,8 @@
 
 
 
-    <h2 class="category-heading">Business & Money</h2>
-    <div class="library-display business">
+    <h2 class="category-heading" id="business">Business & Money</h2>
+    <div class="library-display">
         <span class="book-display">
             <a class="book-icon"
                 href="https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197?ref_=Oct_d_otopr_d_3_0&pd_rd_w=rGgUo&content-id=amzn1.sym.16e37646-73e5-411d-be1c-663080c0b9df&pf_rd_p=16e37646-73e5-411d-be1c-663080c0b9df&pf_rd_r=JEAM8T5BJGC7XMSQK3F8&pd_rd_wg=4TFbI&pd_rd_r=11a9dde1-41da-4c71-85df-557040c87858&pd_rd_i=0140280197"
@@ -138,8 +162,8 @@
     </div>
 
 
-    <h2 class="category-heading">Travel</h2>
-    <div class="library-display travel">
+    <h2 class="category-heading" id="travel">Travel</h2>
+    <div class="library-display">
         <span class="book-display">
             <a class="book-icon"
                 href="https://www.amazon.com/Wager-Tale-Shipwreck-Mutiny-Murder/dp/0385534264?ref_=Oct_d_obs_d_27_0&pd_rd_w=2hXwS&content-id=amzn1.sym.68cf20ef-f2f0-42ca-8c87-ad9617594532&pf_rd_p=68cf20ef-f2f0-42ca-8c87-ad9617594532&pf_rd_r=4EYMXVA84ZA8FQSAZS2X&pd_rd_wg=Eqb7I&pd_rd_r=2889d08b-fdd0-4d7c-ac46-6ef09650bddf&pd_rd_i=0385534264"
@@ -170,8 +194,8 @@
     </div>
 
 
-    <h2 class="category-heading">Romance</h2>
-    <div class="library-display romance">
+    <h2 class="category-heading" id="romance">Romance</h2>
+    <div class="library-display">
         <span class="book-display">
             <a class="book-icon"
                 href="https://www.amazon.com/dp/B0BLSQ497J/ref=s9_acsd_al_bw_c2_x_0_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-6&pf_rd_r=RWH80PWSR1M0H53BDRAV&pf_rd_t=101&pf_rd_p=b12eed8a-ef4c-4514-9518-db184c4296cc&pf_rd_i=23"
@@ -197,6 +221,36 @@
                 <img src="https://m.media-amazon.com/images/I/51FeBO3UxXL.jpg" alt="Cannot load book"> </a>
         </span>
     </div>
-</body>
 
+        
+    <h2 class="category-heading" id="fantasy">Fantasy</h2>
+    <div class="library-display">
+        <span class="book-display">
+            <a class="book-icon"
+                href="https://www.amazon.com/House-Salt-Sorrows-Erin-Craig-ebook/dp/B07KDVTR4Y/ref=sr_1_1?keywords=fantasy+books&qid=1691331930&s=books&sprefix=fan%2Cstripbooks-intl-ship%2C317&sr=1-1"
+                target="_blank">
+                <img src="https://m.media-amazon.com/images/I/51NJDG8ZarL.jpg" alt="Cannot load book"> </a>
+        </span>
+        <span class="book-display">
+            <a class="book-icon"
+                href="https://www.amazon.com/Fourth-Wing-Empyrean-Book-1-ebook/dp/B0BGDM197Q/ref=sr_1_2?keywords=fantasy+books&qid=1691331930&s=books&sprefix=fan%2Cstripbooks-intl-ship%2C317&sr=1-2"
+                target="_blank">
+                <img src="https://m.media-amazon.com/images/I/61dEdpy80UL.jpg" alt="Cannot load book"> </a>
+        </span>
+        <span class="book-display">
+            <a class="book-icon"
+                href="https://www.amazon.com/Serpent-Wings-Night-Crowns-Nyaxia/dp/1957779020/ref=sr_1_4?keywords=fantasy+books&qid=1691331930&s=books&sprefix=fan%2Cstripbooks-intl-ship%2C317&sr=1-4"
+                target="_blank">
+                <img src="https://m.media-amazon.com/images/I/41HyBJ-xZCL._SX331_BO1,204,203,200_.jpg" alt="Cannot load book"> </a>
+        </span>
+        <span class="book-display">
+            <a class="book-icon"
+                href="https://www.amazon.com/Court-Thorns-Roses-Sarah-Maas-ebook/dp/B00OZP5VRS/ref=sr_1_5?keywords=fantasy+books&qid=1691331930&s=books&sprefix=fan%2Cstripbooks-intl-ship%2C317&sr=1-5"
+                target="_blank">
+                <img src="https://m.media-amazon.com/images/I/51RlqfADKXL.jpg" alt="Cannot load book"> </a>
+        </span>
+    </div>
+
+
+</body>
 </html>
