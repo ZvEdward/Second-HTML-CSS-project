@@ -29,7 +29,6 @@ body {
 }
 
 .book-ani:hover ~ .list-item{
-    /* transition: all 0.5s; */
     opacity: 1;
 }
 
